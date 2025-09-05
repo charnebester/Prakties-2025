@@ -52,8 +52,16 @@ begin
    begin
      Readln(tf, sEen);
      iPos := pos('!', sEen);
-     sNaam := copy(sEen,iPos+1,iPos+2);
+
+     sNaam := copy(sEen, iPos+1, 1);
      redAfvoer.Lines.Add(sNaam) ;
+
+
+
+
+
+
+
    end;
 
 

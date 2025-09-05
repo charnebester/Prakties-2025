@@ -39,7 +39,6 @@ object Form2: TForm2
     Height = 25
     Caption = 'Naam En Website '
     TabOrder = 2
-    OnClick = btnN_E_WClick
   end
   object btnCity: TButton
     Left = 600
