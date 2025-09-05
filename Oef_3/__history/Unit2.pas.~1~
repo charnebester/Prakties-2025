@@ -8,15 +8,13 @@ uses
 
 type
   TForm2 = class(TForm)
-    redAfvoer: TRichEdit;
+    RichEdit1: TRichEdit;
     btnVocalName: TButton;
     btnN_E_W: TButton;
     btnCity: TButton;
     btnSecure: TButton;
     btnNTF: TButton;
     btnDelete: TButton;
-    btnClear: TButton;
-    procedure btnClearClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,10 +27,5 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TForm2.btnClearClick(Sender: TObject);
-begin
-redAfvoer.Lines.Clear;
-end;
 
 end.
