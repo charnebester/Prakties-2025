@@ -1,0 +1,44 @@
+unit sSter;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Samples.Spin,
+  Vcl.ComCtrls;
+
+type
+  TForm2 = class(TForm)
+    RichEdit1: TRichEdit;
+    SpinEdit1: TSpinEdit;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.Button1Click(Sender: TObject);
+ var
+ I : integer;
+ iGetal: integer;
+ sSter : string;
+begin
+ iGetal := SpinEdit1.Value -1;
+ sSter := '*';
+ for I := 0 to iGetal do
+   begin
+     sSter := sSter + '*';
+     RichEdit1.lines.Add('sSter' + #9 + 'sSter')  ;
+   end;
+end;
+
+end.

@@ -25,36 +25,7 @@ implementation
 {$R *.dfm}
 
 procedure TForm2.Button1Click(Sender: TObject);
-var
-
-tf : TextFile;
-sEen : string;
-
-
 begin
- if FileExists('Hi.txt') <> true then
- begin
-  ShowMessage('Leer bestaan nie.');
-  Exit;
- end;
- AssignFile(tf , 'Hi.txt');
- Reset(tf) ;
- While not EOF(tf) do
- begin
-   Readln(tf , sEen) ;
- end;
-
-
- CloseFile(tf);
-end;
-
-end.
-
-
-
-
-
-
 ///  wanneer hierdie knoppie gedruk word moet jy elke lyn uit die text file
 ///  Hi.txt op die red wys. As n lyn n getal in het moet jy nie net die lyn op die
 ///  red wys nie maar ook die woord getal na nie lyn
@@ -76,3 +47,6 @@ end.
 ///  (in die text file het 'h1lp me' n getal in gehaad so toe ons hom afvoer op
 ///  die red toe sit one die woord getal langs hom)
 
+end;
+
+end.
