@@ -33,11 +33,11 @@ procedure TForm2.Button1Click(Sender: TObject);
  sSter : string;
 begin
  iGetal := SpinEdit1.Value -1;
- sSter := '';
+ sSter := '*';
  for I := 0 to iGetal do
    begin
      sSter := sSter + '*';
-     RichEdit1.lines.Add(sSter)  ;
+     RichEdit1.lines.Add('sSter' + #9 + 'sSter')  ;
    end;
 end;
 
