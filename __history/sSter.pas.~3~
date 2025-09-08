@@ -40,5 +40,5 @@ begin
      RichEdit1.lines.Add(sSter)  ;
    end;
 end;
-
+                 // help my
 end.
